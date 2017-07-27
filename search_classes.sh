@@ -23,7 +23,7 @@ function ergodic()
   do
     if [ -d $1"/"$file ] 
     then
-       ergodic $1"/"$file
+       ergodic $1"/"$file $2 $3
     else
        matchClass $1"/"$file $2 $3
     fi
